@@ -1,0 +1,243 @@
+# ============================================
+# GITIGNORE SÉCURISÉ - RECONVERSION AGENTS IA
+# ============================================
+
+# ==========================================
+# FICHIERS SENSIBLES - SÉCURITÉ CRITIQUE
+# ==========================================
+
+# Variables d'environnement et secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# Fichiers de credentials
+credentials.json
+service-account*.json
+*-credentials.json
+secrets.yaml
+secrets.yml
+config/secrets.*
+
+# Clés SSH et certificats
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# Tokens et API keys
+.api-keys
+.tokens
+*.token
+
+# ==========================================
+# PYTHON
+# ==========================================
+
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+pipenv/
+.pipenv/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# ==========================================
+# NODEJS / JAVASCRIPT
+# ==========================================
+
+# Dependencies
+node_modules/
+jspm_packages/
+bower_components/
+.npm
+.yarn/
+.pnp.*
+.yarn-integrity
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# Testing
+coverage/
+.nyc_output/
+
+# ==========================================
+# BASES DE DONNÉES
+# ==========================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# PostgreSQL
+*.sql
+*.dump
+*.backup
+
+# MongoDB
+*.bson
+
+# Redis
+dump.rdb
+
+# ==========================================
+# LOGS ET DEBUGGING
+# ==========================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Debugging
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.history/
+
+# ==========================================
+# DOCKER
+# ==========================================
+
+# Docker files sensibles
+docker-compose.override.yml
+.dockerignore
+
+# ==========================================
+# CLOUD ET DÉPLOIEMENT
+# ==========================================
+
+# AWS
+.aws/
+.elasticbeanstalk/
+
+# Google Cloud
+.gcloud/
+.gcp/
+
+# Azure
+.azure/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# ==========================================
+# SYSTÈME D'EXPLOITATION
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ==========================================
+# TEMPORAIRES
+# ==========================================
+
+# Fichiers temporaires
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# ==========================================
+# CI/CD
+# ==========================================
+
+.gitlab-ci-local/
+.github-actions-cache/

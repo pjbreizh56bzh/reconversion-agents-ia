@@ -38,7 +38,10 @@ def fetch_page(url: str, timeout: int = DEFAULT_TIMEOUT) -> PageData:
     except requests.RequestException as exc:
         raise ScraperError(f"Failed to fetch {url}: {exc}") from exc
 
-    soup = BeautifulSoup(response.text, "lxml")
+    # Use the raw bytes so BeautifulSoup can detect the encoding itself (via
+    # <meta charset> or a BOM); trusting response.text here falls back to
+    # ISO-8859-1 whenever the server omits a charset, mangling accents.
+    soup = BeautifulSoup(response.content, "lxml")
 
     title = soup.title.string.strip() if soup.title and soup.title.string else None
 

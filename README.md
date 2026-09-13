@@ -56,6 +56,27 @@ docker build -t agent-automatisation .
 docker run --rm agent-automatisation scrape https://example.com
 ```
 
+## Exemple concret (à montrer sur un profil freelance)
+
+Le dossier [`examples/`](examples/) contient une sortie réelle de l'outil,
+utilisable telle quelle dans un portfolio Fiverr/Upwork/Malt :
+
+- [`example_scrape.json`](examples/example_scrape.json) — résultat de
+  `agent.cli scrape` sur une page produit de démonstration (titre,
+  méta-description, titres, liens, texte).
+- [`example_leads.csv`](examples/example_leads.csv) — jeu de données brut
+  (catalogue produits) tel qu'on l'obtiendrait après un scraping par lots.
+- [`example_report.md`](examples/example_report.md) — rapport généré par
+  `agent.cli analyze` à partir de ce CSV (statistiques de prix, répartition
+  par catégorie, produits les plus fréquents).
+
+Pour régénérer ces fichiers :
+
+```bash
+python -m agent.cli scrape <url> -o examples/example_scrape.json
+python -m agent.cli analyze examples/example_leads.csv -o examples/example_report.md --title "Rapport - Catalogue BoutiqueDemo"
+```
+
 ## Vendre cette solution en freelance
 
 ### Positionnement

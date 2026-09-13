@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:8931/",
+  "status_code": 200,
+  "title": "BoutiqueDemo - Chaussures de randonnée",
+  "meta_description": "Catalogue de chaussures de randonnée : comparez prix, marques et disponibilité en un coup d'oeil.",
+  "headings": [
+    "Chaussures de randonnée",
+    "Meilleures ventes",
+    "Nouveautés"
+  ],
+  "links": [
+    "http://127.0.0.1:8931/produit/trailrunner-x2",
+    "http://127.0.0.1:8931/produit/montagna-pro",
+    "http://127.0.0.1:8931/produit/alpine-light",
+    "https://paiement.example/checkout"
+  ],
+  "word_count": 47,
+  "text": "BoutiqueDemo - Chaussures de randonnée Chaussures de randonnée Meilleures ventes Trailrunner X2 - 89,90 € - En stock Montagna Pro - 129,00 € - En stock Nouveautés Alpine Light - 109,50 € - Rupture de stock Voir Trailrunner X2 Voir Montagna Pro Voir Alpine Light Paiement sécurisé"
+}

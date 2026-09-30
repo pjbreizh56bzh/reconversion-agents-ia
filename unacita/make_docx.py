@@ -11,7 +11,7 @@ IMG="decor_unacita_cadre_A4.png"
 def add_frame(doc):
     sec=doc.sections[0]
     sec.page_width=Cm(21); sec.page_height=Cm(29.7)
-    sec.top_margin=Cm(6.6); sec.bottom_margin=Cm(3.8)
+    sec.top_margin=Cm(4.8); sec.bottom_margin=Cm(3.8)
     sec.left_margin=Cm(3); sec.right_margin=Cm(3)
     sec.header_distance=Cm(0.5)
     p=sec.header.paragraphs[0]

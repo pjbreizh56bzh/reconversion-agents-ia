@@ -92,7 +92,5 @@ La version imprimable `affiche-unacita-v2.html` utilise ces textes, avec des cha
 
 ## Reste à confirmer
 1. Numéro de la rue Pierre Chohan.
-2. Premier contact gratuit ? horaires d'appel ?
-3. Un vrai témoignage / chiffre d'activité.
-4. L'OPEX est-il accepté ? Les adhérents viennent-ils d'autres communes que Saint-Avé ?
-5. Possibilité de paiement autre que le chèque (virement, espèces en permanence) ?
+2. L'OPEX est-il accepté ? Les adhérents viennent-ils d'autres communes que Saint-Avé ?
+3. Possibilité de paiement autre que le chèque (virement, espèces en permanence) ?

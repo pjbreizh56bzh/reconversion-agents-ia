@@ -69,3 +69,30 @@ Un ancien combattant (ou sa veuve, ou son fils/sa fille) doit comprendre en 3 se
 - Logo et photos disponibles.
 
 La version imprimable `affiche-unacita-v2.html` utilise ces textes, avec des champs `[À COMPLÉTER]` visibles.
+
+---
+
+# Mise à jour — documents fournis (bulletin, carte de veuve, aide financière, aide ménagère)
+
+## Infos désormais confirmées (utilisées dans l'affiche v2)
+- **Nom complet** : Union Nationale des Anciens Combattants d'Indochine, des TOE et d'Afrique du Nord — Section de Saint-Avé (56890), Groupement 211, Fédération Nationale André Maginot.
+- **Contact** : Serge RAVIART, président — 02 97 44 51 69 / 06 12 93 10 04 — unacita.sa56@gmail.com.
+- **Cotisation** : 22 €, chèque à l'ordre de « l'UNACITA de St Avé ».
+- **Services concrets à mettre en avant** (les 4 formulaires) : carte du combattant / carte de ressortissante (veuve) ONaCVG, demande d'aide financière ONaCVG Morbihan, aide ménagère / maintien à domicile (portage de repas, téléalarme).
+
+## Constats sur les formulaires
+| Sujet | Constat | Correction proposée |
+|---|---|---|
+| Bulletin d'adhésion | « UNION NATIONAL DES ANCIENS COMBATTANT » (fautes d'accord), texte très dense, deux adresses d'envoi (M. Guittet à St Nolff **et** Strasbourg) | Corriger la faute, une seule adresse d'envoi, champs obligatoires réduits (nom, adresse, tél, n° carte) |
+| Adhésion | Chèque + courrier uniquement, pas de contact nominatif sur le bulletin | Ajouter tél. du président + e-mail ; option de remise en main propre en permanence |
+| Lettre d'en-tête | Adresse du président : numéro de rue illisible sur l'image | Me confirmer le numéro |
+| Public | L'en-tête cite Indochine / TOE / AFN ; l'affiche v1 disait « toutes générations » | Préciser « d'Indochine, des TOE, d'Afrique du Nord — et leurs veuves » (et OPEX si la section les accueille) |
+| Aides ONaCVG | Elles sont **subsidiaires aux aides de droit commun** (mention officielle) | Ne pas promettre « vous aurez droit » : dire « on vérifie vos droits avec vous » |
+| Formulaires ONaCVG | Les permanences ONaCVG Morbihan : accueil tél. 8h45-12h15, physique sur RDV seulement (Vannes, 02 97 47 88 88) | Mettre ce numéro dans un mémo remis aux adhérents |
+
+## Reste à confirmer
+1. Numéro de la rue Pierre Chohan.
+2. Premier contact gratuit ? horaires d'appel ?
+3. Un vrai témoignage / chiffre d'activité.
+4. L'OPEX est-il accepté ? Les adhérents viennent-ils d'autres communes que Saint-Avé ?
+5. Possibilité de paiement autre que le chèque (virement, espèces en permanence) ?

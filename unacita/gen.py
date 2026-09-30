@@ -39,7 +39,7 @@ for yy in (m+60,H-m-80):
         svg+=f'<rect x="{m+60+i*bw:.0f}" y="{yy}" width="{bw:.0f}" height="20" fill="{c}" stroke="{BLUE if c=="#fff" else c}" stroke-width="1"/>'
 svg+=corner(m+10,m+10,0)+corner(W-m-10,m+10,90)+corner(W-m-10,H-m-10,180)+corner(m+10,H-m-10,270)
 # lauriers haut (zone logo) et bas
-svg+=wreath(W/2,430,170,True)+wreath(W/2,H-480,170,True)
+svg+=wreath(W/2,430,170,True)
 svg+=f''
 svg+='</svg>'
 open("decor_unacita_cadre_A4.svg","w").write(svg)

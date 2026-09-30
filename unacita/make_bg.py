@@ -1,10 +1,10 @@
 """Fond A4 à partir de l'image du courrier : on garde bordure, drapeaux, personnages, monument,
 et on efface le texte du courrier sous un panneau clair qui accueille le texte du PV."""
 import sys
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageOps, ImageEnhance
 src,out=sys.argv[1],sys.argv[2]
-OPACITE=float(sys.argv[3]) if len(sys.argv)>3 else 0.35   # opacité de l'intérieur (personnages, fleurs) : 1 = d'origine, 0 = blanc
-BORDURE=44                                                 # épaisseur (px image source) du contour gardé en couleur réelle
+OPACITE=float(sys.argv[3]) if len(sys.argv)>3 else 0.22   # opacité de l'intérieur (personnages, fleurs) : 1 = d'origine, 0 = blanc
+BORDURE=36                                                 # épaisseur (px image source) du contour gardé en couleur réelle
 im=Image.open(src).convert("RGB")            # 1024x1536
 W,H=im.size
 # efface la signature manuscrite « Le Président » du courrier (encre bleu foncé, bas droite)
@@ -23,11 +23,13 @@ mask=mask.filter(ImageFilter.GaussianBlur(9))
 panel=Image.new("RGB",(W,H),(255,255,255))
 im=Image.composite(panel,im,mask)
 orig=im
-pale=Image.blend(Image.new('RGB',im.size,(255,255,255)),im,OPACITE)   # intérieur plus transparent
+gris=ImageOps.grayscale(im).convert('RGB')                              # intérieur en nuances de gris
+pale=Image.blend(Image.new('RGB',im.size,(255,255,255)),gris,OPACITE)   # et très transparent
 inner=Image.new("L",im.size,0)
 ImageDraw.Draw(inner).rectangle((BORDURE,BORDURE,im.size[0]-BORDURE,im.size[1]-BORDURE),fill=255)
 inner=inner.filter(ImageFilter.GaussianBlur(3))
-im=Image.composite(pale,orig,inner)                                   # contour = image d'origine
+orig=ImageEnhance.Color(orig).enhance(1.25)                            # liseré tricolore un peu plus vif
+im=Image.composite(pale,orig,inner)                                   # contour = couleurs réelles
 im=im.resize((2480,3508),Image.LANCZOS)      # A4 à 300 dpi
 im.save(out,quality=90)
 print(out,im.size)

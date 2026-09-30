@@ -91,6 +91,6 @@ La version imprimable `affiche-unacita-v2.html` utilise ces textes, avec des cha
 | Formulaires ONaCVG | Les permanences ONaCVG Morbihan : accueil tél. 8h45-12h15, physique sur RDV seulement (Vannes, 02 97 47 88 88) | Mettre ce numéro dans un mémo remis aux adhérents |
 
 ## Reste à confirmer
-1. Numéro de la rue Pierre Chohan.
+1. (Numéro de rue volontairement non affiché.)
 2. L'OPEX est-il accepté ? Les adhérents viennent-ils d'autres communes que Saint-Avé ?
 3. Possibilité de paiement autre que le chèque (virement, espèces en permanence) ?

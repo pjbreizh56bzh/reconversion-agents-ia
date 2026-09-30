@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNACITA — Affiche v2</title>
+<style>
+  :root { --bleu:#0b2a6f; --rouge:#d3202e; --blanc:#ffffff; --gris:#f3f5fa; --texte:#10182b; }
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#cfd4df; font-family: "Segoe UI", Arial, Helvetica, sans-serif; color:var(--texte); }
+  .affiche { width:210mm; height:297mm; margin:0 auto; background:var(--blanc); display:flex; flex-direction:column; overflow:hidden; }
+  .bandeau-tricolore { height:6mm; background:linear-gradient(90deg,var(--bleu) 0 33.3%,#fff 33.3% 66.6%,var(--rouge) 66.6%); border-bottom:1px solid #ddd; }
+  header { background:var(--bleu); color:#fff; padding:7mm 12mm 6mm; text-align:center; }
+  header .nom { font-size:15mm; font-weight:900; letter-spacing:1mm; line-height:1; }
+  header .qui { font-size:4.4mm; margin-top:2mm; opacity:.95; }
+  .accroche { padding:9mm 12mm 4mm; text-align:center; }
+  .accroche h1 { margin:0; font-size:11.5mm; line-height:1.12; font-weight:900; color:var(--bleu); }
+  .accroche h1 em { font-style:normal; color:var(--rouge); display:block; margin-top:2mm; }
+  .accroche p { margin:5mm auto 0; font-size:5mm; line-height:1.4; max-width:175mm; }
+  .blocs { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; padding:5mm 12mm; }
+  .bloc { background:var(--gris); border-top:2mm solid var(--bleu); border-radius:2mm; padding:5mm 4.5mm; }
+  .bloc:nth-child(2){ border-top-color:var(--rouge); }
+  .bloc .num { width:10mm; height:10mm; border-radius:50%; background:var(--bleu); color:#fff; font-weight:900; font-size:6mm; display:flex; align-items:center; justify-content:center; margin-bottom:3mm; }
+  .bloc:nth-child(2) .num { background:var(--rouge); }
+  .bloc h2 { margin:0 0 2mm; font-size:5.4mm; color:var(--bleu); }
+  .bloc p { margin:0; font-size:4.2mm; line-height:1.38; }
+  .veuves { margin:0 12mm; padding:4.5mm 6mm; border-left:2.5mm solid var(--rouge); background:#fff4f4; font-size:4.8mm; line-height:1.35; }
+  .veuves strong { color:var(--rouge); }
+  .temoignage { margin:5mm 12mm 0; text-align:center; font-size:4.6mm; font-style:italic; color:#333; }
+  .temoignage span { display:block; font-style:normal; font-size:3.8mm; color:#666; margin-top:1mm; }
+  .cta { margin-top:auto; background:var(--bleu); color:#fff; padding:7mm 12mm 6mm; display:grid; grid-template-columns:1.25fr 1fr; gap:8mm; align-items:center; }
+  .cta .appel small { display:block; font-size:5mm; letter-spacing:.3mm; font-weight:700; text-transform:uppercase; color:#ffd84d; }
+  .cta .appel .tel { font-size:14mm; font-weight:900; line-height:1.05; white-space:nowrap; }
+  .cta .appel .garantie { font-size:4.2mm; margin-top:1.5mm; opacity:.95; }
+  .cta .adhesion { border-left:1px solid rgba(255,255,255,.35); padding-left:6mm; font-size:4.2mm; line-height:1.45; }
+  .cta .adhesion b { font-size:4.8mm; color:#ffd84d; }
+  .qr { width:24mm; height:24mm; border:1.5px dashed #fff; display:inline-flex; align-items:center; justify-content:center; font-size:3mm; text-align:center; margin-top:2mm; }
+  footer { background:var(--rouge); color:#fff; text-align:center; font-size:5mm; font-weight:800; padding:3.5mm 10mm; }
+  .todo { background:#ffe36e; color:#000; padding:0 1.2mm; border-radius:1mm; font-weight:700; }
+  @media print { body{background:#fff;} .todo{ -webkit-print-color-adjust:exact; print-color-adjust:exact; } .affiche{ -webkit-print-color-adjust:exact; print-color-adjust:exact; } }
+</style>
+</head>
+<body>
+<div class="affiche">
+  <div class="bandeau-tricolore"></div>
+  <header>
+    <div class="nom">UNACITA</div>
+    <div class="qui"><span class="todo">[SIGLE DÉVELOPPÉ]</span> · Association d'entraide des anciens combattants · <span class="todo">[VILLE / DÉPARTEMENT]</span></div>
+  </header>
+
+  <section class="accroche">
+    <h1>Un droit oublié ? Un dossier qui bloque ?
+      <em>Vous n'avez plus à affronter ça seul.</em></h1>
+    <p>Anciens combattants de toutes générations, veuves de militaires : des bénévoles qui connaissent vos droits vous aident à monter vos dossiers.</p>
+  </section>
+
+  <section class="blocs">
+    <div class="bloc">
+      <div class="num">1</div>
+      <h2>On vous écoute</h2>
+      <p>Un premier échange, sans jugement, avec quelqu'un qui comprend votre parcours.</p>
+    </div>
+    <div class="bloc">
+      <div class="num">2</div>
+      <h2>On démêle vos papiers</h2>
+      <p>Carte du combattant, retraite du combattant, pension de réversion, aides sociales : on vous explique et on remplit les dossiers avec vous.</p>
+    </div>
+    <div class="bloc">
+      <div class="num">3</div>
+      <h2>On va jusqu'au bout</h2>
+      <p>Un bénévole reste votre interlocuteur tant que votre dossier n'est pas réglé.</p>
+    </div>
+  </section>
+
+  <div class="veuves"><strong>Vous êtes veuve d'un militaire ?</strong> Vous avez peut-être droit à une aide que vous ne connaissez pas. Appelez-nous, nous vérifions avec vous.</div>
+
+  <div class="temoignage">« Je croyais ne pas y avoir droit. Ils ont tout géré. »
+    <span>— <span class="todo">[Prénom, témoignage réel à confirmer]</span></span></div>
+
+  <section class="cta">
+    <div class="appel">
+      <small>Appelez-nous</small>
+      <div class="tel">06 12 93 10 04</div>
+      <div class="garantie"><span class="todo">[Gratuit · confidentiel · sans engagement]</span> · <span class="todo">[horaires]</span></div>
+    </div>
+    <div class="adhesion">
+      <b>Adhérer, c'est simple</b><br>
+      Cotisation : <span class="todo">[XX €/an]</span><br>
+      <span class="todo">[e-mail]</span><br>
+      <span class="todo">[adresse de permanence]</span><br>
+      <div class="qr">QR code<br>adhésion</div>
+    </div>
+  </section>
+  <footer>Vous connaissez un ancien combattant ou une veuve de militaire ? Parlez-lui de nous.</footer>
+</div>
+</body>
+</html>

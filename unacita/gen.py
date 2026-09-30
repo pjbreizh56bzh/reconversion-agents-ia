@@ -28,7 +28,7 @@ def wreath(cx,cy,r=170,up=True):
     return out
 def corner(x,y,r):
     return f'<g transform="translate({x} {y}) rotate({r})"><path d="M0,0 H230 M0,0 V230" stroke="{GOLD}" stroke-width="10"/><path d="M40,40 H190 M40,40 V190" stroke="{GOLD}" stroke-width="4"/><circle cx="40" cy="40" r="16" fill="{BLUE}" stroke="{GOLD}" stroke-width="5"/><path d="M40,28 L44,38 L55,38 L46,44 L50,55 L40,48 L30,55 L34,44 L25,38 L36,38Z" fill="#fff"/></g>'
-m=90
+m=20
 svg=f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="2100" height="2970"><rect width="{W}" height="{H}" fill="#fff"/>'
 svg+=f'<rect x="{m}" y="{m}" width="{W-2*m}" height="{H-2*m}" fill="none" stroke="{GOLD}" stroke-width="10"/>'
 svg+=f'<rect x="{m+30}" y="{m+30}" width="{W-2*m-60}" height="{H-2*m-60}" fill="none" stroke="{GOLD}" stroke-width="3"/>'
